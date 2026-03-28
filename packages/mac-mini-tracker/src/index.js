@@ -2,6 +2,7 @@
 
 import { scrapeListings } from './scraper.js'
 import { processListings, detectSoldListings, generateReport, formatReport } from './tracker.js'
+import { sendWeeklyReport, sendTestEmail } from './mailer.js'
 import db from './db.js'
 
 const command = process.argv[2] || 'help'
@@ -57,26 +58,53 @@ Mac Mini med ferdig installert OpenClaw faktisk selges for.
 Kommandoer:
   node src/index.js track          Skann Finn.no og oppdater database
   node src/index.js track --quick  Rask skanning (uten dyp OpenClaw-sjekk)
-  node src/index.js report         Vis prisrapport
+  node src/index.js report         Vis prisrapport i terminalen
+  node src/index.js email          Send prisrapport pa e-post
+  node src/index.js test-email     Send en test-epost for a verifisere oppsett
 
-Hvordan det fungerer:
-  1. Kjor 'track' daglig (via cron). Den henter alle Mac Mini-annonser
-     fra Finn.no og sjekker om de nevner OpenClaw.
-  2. Annonser som forsvinner for 60 dager registreres som "antatt solgt"
-     med siste kjente pris.
-  3. Kjor 'report' nar som helst for a se salgspriser, fordelt pa:
-     - Mac Mini med OpenClaw installert (dine konkurrenter)
-     - Mac Mini som bare nevner OpenClaw
-     - Vanlig Mac Mini (baseline for sammenligning)
+E-postkonfigurasjon (miljovariabler):
+  SMTP_HOST=smtp.gmail.com
+  SMTP_PORT=587
+  SMTP_USER=deg@gmail.com
+  SMTP_PASS=xxxx-xxxx-xxxx-xxxx   (Gmail: bruk App Password)
+  MAIL_TO=deg@gmail.com
 
-Cron-eksempel (daglig kl 08:00):
+  Sett disse i en .env-fil eller eksporter dem i shellet.
+
+Cron-oppsett:
+  # Daglig skanning kl 08:00
   0 8 * * * cd /path/to/mac-mini-tracker && node src/index.js track
+
+  # Ukentlig e-postrapport mandag kl 09:00
+  0 9 * * 1 cd /path/to/mac-mini-tracker && node src/index.js email
 
 Forste kjoring:
   cd packages/mac-mini-tracker
   npm install
-  node src/index.js track
+  cp .env.example .env              # Rediger med dine SMTP-detaljer
+  node src/index.js test-email      # Sjekk at e-post fungerer
+  node src/index.js track           # Forste skanning
 `)
+}
+
+// Load .env file if present
+try {
+    const { readFileSync } = await import('fs')
+    const { join, dirname } = await import('path')
+    const { fileURLToPath } = await import('url')
+    const envPath = join(dirname(fileURLToPath(import.meta.url)), '..', '.env')
+    const envContent = readFileSync(envPath, 'utf-8')
+    for (const line of envContent.split('\n')) {
+        const trimmed = line.trim()
+        if (!trimmed || trimmed.startsWith('#')) continue
+        const eqIdx = trimmed.indexOf('=')
+        if (eqIdx === -1) continue
+        const key = trimmed.substring(0, eqIdx).trim()
+        const val = trimmed.substring(eqIdx + 1).trim()
+        if (!process.env[key]) process.env[key] = val
+    }
+} catch {
+    // No .env file, that's fine
 }
 
 try {
@@ -86,6 +114,12 @@ try {
             break
         case 'report':
             runReport()
+            break
+        case 'email':
+            await sendWeeklyReport()
+            break
+        case 'test-email':
+            await sendTestEmail()
             break
         case 'help':
         default:
