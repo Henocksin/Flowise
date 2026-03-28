@@ -28,7 +28,9 @@ db.exec(`
     listing_date TEXT,
     status TEXT DEFAULT 'active',
     estimated_sold_date TEXT,
-    sold_price INTEGER
+    sold_price INTEGER,
+    openclaw_status TEXT DEFAULT 'none',
+    description TEXT
   );
 
   CREATE TABLE IF NOT EXISTS price_history (
