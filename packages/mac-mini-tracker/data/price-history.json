@@ -1,0 +1,102 @@
+{
+  "listings": {
+    "454607447": {
+      "finnId": "454607447",
+      "title": "Mac Mini M2 Pro til salgs, nye, forseglede, US-versjon",
+      "price": null,
+      "model": "M2 Pro",
+      "ram": null,
+      "storage": null,
+      "location": "Norge",
+      "openclawStatus": "mentioned",
+      "firstSeen": "2026-03-28",
+      "lastSeen": "2026-03-28",
+      "status": "active"
+    },
+    "455612395": {
+      "finnId": "455612395",
+      "title": "Strøken M1 Mac Mini til god pris",
+      "price": null,
+      "model": "M1",
+      "ram": "8GB",
+      "storage": "256GB",
+      "location": "Oslo",
+      "openclawStatus": "none",
+      "firstSeen": "2026-03-28",
+      "lastSeen": "2026-03-28",
+      "status": "active"
+    },
+    "451990335": {
+      "finnId": "451990335",
+      "title": "Apple Mac mini M4 1TB SSD 16GB RAM",
+      "price": 11900,
+      "model": "M4",
+      "ram": "16GB",
+      "storage": "1TB",
+      "location": "Rådal",
+      "openclawStatus": "none",
+      "firstSeen": "2026-03-28",
+      "lastSeen": "2026-03-28",
+      "status": "active"
+    },
+    "451942145": {
+      "finnId": "451942145",
+      "title": "Apple Mac mini M4 2 TB SSD",
+      "price": 14900,
+      "model": "M4",
+      "ram": "16GB",
+      "storage": "2TB",
+      "location": "Rådal",
+      "openclawStatus": "none",
+      "firstSeen": "2026-03-28",
+      "lastSeen": "2026-03-28",
+      "status": "active"
+    },
+    "452877854": {
+      "finnId": "452877854",
+      "title": "Mac Mini M2 (2023) – 8 GB RAM / 512 GB SSD – Som ny!",
+      "price": null,
+      "model": "M2",
+      "ram": "8GB",
+      "storage": "512GB",
+      "location": "Oslo",
+      "openclawStatus": "none",
+      "firstSeen": "2026-03-28",
+      "lastSeen": "2026-03-28",
+      "status": "active"
+    },
+    "452856977": {
+      "finnId": "452856977",
+      "title": "Ny og uåpnet - Apple Mac mini M4 16/256GB",
+      "price": null,
+      "model": "M4",
+      "ram": "16GB",
+      "storage": "256GB",
+      "location": "Mosterhamn",
+      "openclawStatus": "none",
+      "firstSeen": "2026-03-28",
+      "lastSeen": "2026-03-28",
+      "status": "active"
+    },
+    "447475529": {
+      "finnId": "447475529",
+      "title": "Apple Mac Mini M4 2024",
+      "price": null,
+      "model": "M4",
+      "ram": "16GB",
+      "storage": "256GB",
+      "location": "Trondheim",
+      "openclawStatus": "none",
+      "firstSeen": "2026-03-28",
+      "lastSeen": "2026-03-28",
+      "status": "active"
+    }
+  },
+  "reports": [
+    {
+      "date": "2026-03-28",
+      "listingsFound": 281
+    }
+  ],
+  "lastScan": "2026-03-28T21:00:00.000Z"
+}
