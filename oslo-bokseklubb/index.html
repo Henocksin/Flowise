@@ -4,34 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oslo Bokseklubb – Boksing for alle på Jordal</title>
-    <meta name="description" content="Oslo Bokseklubb (OBK) på Jordal. Boksing for alle: fitnessboksing for damer, bokseskole, mosjonist, konkurranseparti, junior elite og Rock Steady Boxing for parkinsonrammede. Ta en prøvetime!" />
+    <meta name="description" content="Oslo Bokseklubb (OBK) på Jordal. Boksing for alle: fitnessboksing for damer, bokseskole, mosjonist, konkurranse og Rock Steady Boxing. Ta en prøvetime!" />
     <meta property="og:title" content="Oslo Bokseklubb – Boksing for alle på Jordal" />
-    <meta property="og:description" content="Boksing for alle på Jordal. Bokseskole, mosjonist, konkurranse, fitnessboksing for damer og Rock Steady Boxing. Kom innom for en prøvetime!" />
+    <meta property="og:description" content="Boksing for alle på Jordal siden 1981. Kom innom for en prøvetime!" />
     <meta property="og:type" content="website" />
-    <meta name="theme-color" content="#0c0c0e" />
+    <meta name="theme-color" content="#0a0a0c" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
     <!-- ============ Header ============ -->
     <header class="site-header" id="top">
         <div class="container header-inner">
             <a href="#top" class="brand" aria-label="Oslo Bokseklubb – til toppen">
                 <img src="assets/logo.png" alt="Oslo Bokseklubb" class="brand-logo-img" width="456" height="250" />
             </a>
-
             <nav class="main-nav" id="main-nav" aria-label="Hovedmeny">
-                <a href="#om">Om oss</a>
-                <a href="#partier">Partier &amp; priser</a>
+                <a href="#partier">Partier</a>
                 <a href="#timeplan">Treningstider</a>
-                <a href="#mer">Mer hos oss</a>
+                <a href="#priser">Priser</a>
+                <a href="#mer">Mer</a>
                 <a href="#kontakt">Kontakt</a>
                 <a href="#provetime" class="btn btn-primary nav-cta">Prøvetime</a>
             </nav>
-
             <button class="nav-toggle" id="nav-toggle" aria-label="Åpne meny" aria-expanded="false" aria-controls="main-nav">
                 <span></span><span></span><span></span>
             </button>
@@ -41,117 +41,144 @@
     <main>
         <!-- ============ Hero ============ -->
         <section class="hero">
-            <div class="hero-bg" aria-hidden="true"></div>
-            <div class="container hero-inner">
-                <p class="hero-eyebrow reveal">🥊 Jordal · Oslo · est. 1981</p>
-                <h1 class="reveal">BOKSING<br /><span class="accent">FOR ALLE.</span></h1>
-                <p class="hero-lead reveal">
-                    Fra fitnessboksing og bokseskole til konkurranse og Rock Steady Boxing –
-                    hos Oslo Bokseklubb er det plass til alle, uansett alder, kjønn og ambisjoner.
-                    Kom innom for å slå av en prat!
-                </p>
-                <div class="hero-actions reveal">
-                    <a href="#provetime" class="btn btn-primary btn-lg">Ta en prøvetime</a>
-                    <a href="#partier" class="btn btn-ghost btn-lg">Se partiene</a>
+            <div class="hero-burst" aria-hidden="true"></div>
+            <div class="hero-halftone" aria-hidden="true"></div>
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <span class="kicker reveal">★ Jordal · Oslo · siden 1981</span>
+                    <h1 class="reveal">BOKSING<br /><span class="accent">FOR ALLE</span></h1>
+                    <p class="hero-lead reveal">Fra første jab til konkurranseringen – plass til alle, uansett alder, kjønn og ambisjoner.</p>
+                    <div class="hero-actions reveal">
+                        <a href="#provetime" class="btn btn-primary btn-lg">Ta en prøvetime</a>
+                        <a href="#partier" class="btn btn-ghost btn-lg">Se partiene</a>
+                    </div>
                 </div>
-                <ul class="hero-pills reveal" aria-label="Tilbud">
-                    <li>Fitnessboksing for damer/jenter</li>
-                    <li>Bokseskole (under 18)</li>
-                    <li>Mosjonisten (over 18)</li>
-                    <li>Konkurransepartiet</li>
-                    <li>Rock Steady Boxing</li>
-                </ul>
+                <div class="hero-art reveal" aria-hidden="true">
+                    <img src="assets/gloves.svg" alt="" class="gloves-img" width="520" height="400" />
+                </div>
             </div>
+            <div class="ring-ropes" aria-hidden="true"><span></span><span></span><span></span></div>
         </section>
 
-        <!-- ============ Om klubben ============ -->
-        <section id="om" class="section">
-            <div class="container grid-2">
-                <div class="reveal">
-                    <p class="section-eyebrow">Om oss</p>
-                    <h2>Hos oss finner du mange muligheter</h2>
-                    <p class="lead">
-                        Oslo Bokseklubb (OBK) holder til på Jordal og har boksetrening som passer for
-                        alle. Enten du vil komme i form, lære teknikk fra bunnen eller satse mot
-                        konkurranseringen – så finner du et parti og et fellesskap som passer deg.
-                    </p>
-                    <p>
-                        Vi tar imot nybegynnere med åpne armer, og er stolte av et inkluderende miljø –
-                        blant annet med eget Rock Steady Boxing-tilbud for personer med Parkinson.
-                    </p>
-                    <div class="feature-list">
-                        <div class="feature"><span class="feature-ico">🥊</span> Erfarne trenere på alle nivåer</div>
-                        <div class="feature"><span class="feature-ico">🤝</span> Inkluderende miljø – plass til alle</div>
-                        <div class="feature"><span class="feature-ico">🧠</span> Rock Steady Boxing for parkinsonrammede</div>
-                        <div class="feature"><span class="feature-ico">📍</span> Sentralt på Jordal i Oslo</div>
-                    </div>
-                </div>
-                <div class="om-visual reveal" aria-hidden="true">
-                    <div class="om-card">
-                        <span class="om-quote">“Nysgjerrig på boksing? Ta en prøvetime hos Oslo Bokseklubb!”</span>
-                        <a href="#provetime" class="om-cta">Bestill prøvetime →</a>
-                    </div>
-                </div>
+        <!-- ============ Ticker ============ -->
+        <div class="ticker" aria-hidden="true">
+            <div class="ticker-track">
+                <span>Fitnessboksing</span><i>🥊</i><span>Bokseskole</span><i>🥊</i><span>Mosjonisten</span><i>🥊</i><span>Konkurranse</span><i>🥊</i><span>Junior Elite</span><i>🥊</i><span>Rock Steady Boxing</span><i>🥊</i><span>Sparring</span><i>🥊</i><span>Prøvetime</span><i>🥊</i>
+                <span>Fitnessboksing</span><i>🥊</i><span>Bokseskole</span><i>🥊</i><span>Mosjonisten</span><i>🥊</i><span>Konkurranse</span><i>🥊</i><span>Junior Elite</span><i>🥊</i><span>Rock Steady Boxing</span><i>🥊</i><span>Sparring</span><i>🥊</i><span>Prøvetime</span><i>🥊</i>
+            </div>
+        </div>
+
+        <!-- ============ Stat band ============ -->
+        <section class="stats">
+            <div class="container stats-grid">
+                <div class="stat reveal"><strong data-count="1981">1981</strong><span>Stiftet</span></div>
+                <div class="stat reveal"><strong data-count="6">6</strong><span>Partier</span></div>
+                <div class="stat reveal"><strong data-count="7">7</strong><span>Treningsdager</span></div>
+                <div class="stat reveal"><strong class="no-count">Alle</strong><span>Nivåer &amp; aldre</span></div>
             </div>
         </section>
 
         <!-- ============ Partier ============ -->
-        <section id="partier" class="section section-alt">
+        <section id="partier" class="section">
             <div class="container">
                 <div class="section-head reveal">
-                    <p class="section-eyebrow">Partier &amp; priser</p>
+                    <p class="section-eyebrow">Partier</p>
                     <h2>Finn ditt parti</h2>
-                    <p class="section-sub">Vi har et bredt tilbud gjennom uka – velg det som passer deg.</p>
                 </div>
                 <div class="cards">
-                    <article class="card reveal">
-                        <div class="card-tag tag-blue">Under 18 · 10–18 år</div>
+                    <article class="card tilt reveal" data-accent="#6cb0ff">
+                        <img src="assets/glove-icon.svg" alt="" class="card-ico" width="48" height="48" />
                         <h3>Bokseskole</h3>
-                        <p>Grunnleggende innføring i boksingens ABC – med mye lek og moro. Erfarne instruktører passer på at ingen blir skadet, og filosofien er at de unge skal bokse <em>med</em> hverandre, ikke bare mot. Etter et år kan man gå opp til ferdighetsmerket (bronse, sølv, gull).</p>
-                        <p class="card-price">200 kr<span>/mnd</span></p>
-                        <a href="#provetime" class="btn btn-outline">Prøvetime</a>
+                        <p>Boksingens ABC med lek og moro – for barn og ungdom 10–18 år.</p>
+                        <div class="card-foot"><span class="card-price">200 kr<small>/mnd</small></span><a href="#provetime" class="card-link">Prøvetime →</a></div>
                     </article>
-
-                    <article class="card card-featured reveal">
-                        <div class="card-tag tag-red">Over 18 · mest populær</div>
+                    <article class="card tilt card-featured reveal" data-accent="#e11d2a">
+                        <img src="assets/glove-icon.svg" alt="" class="card-ico" width="48" height="48" />
                         <h3>Mosjonisten</h3>
-                        <p>En gjeng «voksne» gutter og jenter som møtes to ganger i uka. Her finner du alt fra veteraner og «pensjonerte» konkurranseutøvere til ferske rekrutter. Fokus på styrke, kondisjon og gode bokseferdigheter – med egne grupper for erfarne og nybegynnere.</p>
-                        <p class="card-price">369 kr<span>/mnd</span></p>
-                        <a href="#provetime" class="btn btn-primary">Bli med</a>
+                        <p>To økter i uka for voksne – fra ferske rekrutter til veteraner. Over 18.</p>
+                        <div class="card-foot"><span class="card-price">369 kr<small>/mnd</small></span><a href="#provetime" class="card-link">Bli med →</a></div>
                     </article>
-
-                    <article class="card reveal">
-                        <div class="card-tag tag-pink">For damer/jenter</div>
+                    <article class="card tilt reveal" data-accent="#f472b6">
+                        <img src="assets/glove-icon.svg" alt="" class="card-ico" width="48" height="48" />
                         <h3>Fitnessboksing</h3>
-                        <p>Et tilbud kun for jenter, med fokus på kondisjon, koordinasjon og styrke – pluss en grunnleggende innføring i bokse­kunsten. Ledes av erfaren trener og klubbeier Max Mankowitz. Full fart og høy forbrenning – og du slipper å bokse på andre om du ikke vil.</p>
-                        <p class="card-price">Klippekort<span> · se under</span></p>
-                        <a href="#priser" class="btn btn-outline">Se priser</a>
+                        <p>Kondisjon, styrke og teknikk – kun for damer/jenter.</p>
+                        <div class="card-foot"><span class="card-price">Klippekort</span><a href="#priser" class="card-link">Se priser →</a></div>
                     </article>
-
-                    <article class="card reveal">
-                        <div class="card-tag tag-redo">Aktive boksere</div>
-                        <h3>Konkurransepartiet</h3>
-                        <p>For medlemmer som satser og har erfaring klubben har valgt ut. Målrettet trening mot stevner og konkurranser. Trener flere dager i uka.</p>
-                        <p class="card-price">Etter avtale<span></span></p>
-                        <a href="#kontakt" class="btn btn-outline">Ta kontakt</a>
+                    <article class="card tilt reveal" data-accent="#ff8088">
+                        <img src="assets/glove-icon.svg" alt="" class="card-ico" width="48" height="48" />
+                        <h3>Konkurranse</h3>
+                        <p>Målrettet trening mot stevner. For utvalgte, aktive boksere.</p>
+                        <div class="card-foot"><span class="card-price">Etter avtale</span><a href="#kontakt" class="card-link">Kontakt →</a></div>
                     </article>
-
-                    <article class="card reveal">
-                        <div class="card-tag tag-purple">Junior · utvalgt</div>
+                    <article class="card tilt reveal" data-accent="#c08bff">
+                        <img src="assets/glove-icon.svg" alt="" class="card-ico" width="48" height="48" />
                         <h3>Junior Elite</h3>
-                        <p>Et satsningsparti for unge utøvere som har erfaring og vil ta boksingen videre. Kun for medlemmer klubben har valgt ut.</p>
-                        <p class="card-price">Etter avtale<span></span></p>
-                        <a href="#kontakt" class="btn btn-outline">Ta kontakt</a>
+                        <p>Satsing for unge med erfaring som vil ta boksingen videre.</p>
+                        <div class="card-foot"><span class="card-price">Etter avtale</span><a href="#kontakt" class="card-link">Kontakt →</a></div>
                     </article>
-
-                    <article class="card reveal">
-                        <div class="card-tag tag-blue">Parkinson</div>
-                        <h3>Rock Steady Boxing</h3>
-                        <p>Et eget, tilrettelagt bokseopplegg kun for personer med Parkinson. Forskningsbasert trening i trygge rammer, fordelt på grupper med ulik intensitet.</p>
-                        <p class="card-price">Ta kontakt<span></span></p>
-                        <a href="#kontakt" class="btn btn-outline">Ta kontakt</a>
+                    <article class="card tilt reveal" data-accent="#4ade80">
+                        <img src="assets/glove-icon.svg" alt="" class="card-ico" width="48" height="48" />
+                        <h3>Rock Steady</h3>
+                        <p>Tilrettelagt boksing for personer med Parkinson – trygt og forskningsbasert.</p>
+                        <div class="card-foot"><span class="card-price">Ta kontakt</span><a href="#kontakt" class="card-link">Kontakt →</a></div>
                     </article>
                 </div>
+            </div>
+        </section>
+
+        <!-- ============ Timeplan ============ -->
+        <section id="timeplan" class="section section-alt">
+            <div class="ring-ropes top" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="section-eyebrow">Treningstider</p>
+                    <h2>Slik ser uka ut</h2>
+                </div>
+                <div class="week reveal">
+                    <div class="day">
+                        <h3 class="day-name">Man</h3>
+                        <div class="slot s-red"><span class="slot-time">17:00–18:30</span> Konkurranse</div>
+                        <div class="slot s-pink"><span class="slot-time">19:00–20:30</span> Fitness damer</div>
+                    </div>
+                    <div class="day">
+                        <h3 class="day-name">Tir</h3>
+                        <div class="slot s-blue"><span class="slot-time">12:00–14:00</span> Rock Steady gr. 2</div>
+                        <div class="slot s-blue"><span class="slot-time">14:00–16:30</span> Rock Steady gr. 1</div>
+                        <div class="slot s-yellow"><span class="slot-time">16:45–18:00</span> Bokseskole</div>
+                        <div class="slot s-green"><span class="slot-time">18:15–19:45</span> Mosjonist erfarne</div>
+                        <div class="slot s-green"><span class="slot-time">19:45–21:15</span> Mosjonist nybeg.</div>
+                    </div>
+                    <div class="day">
+                        <h3 class="day-name">Ons</h3>
+                        <div class="slot s-red"><span class="slot-time">17:00–19:00</span> Konkurranse</div>
+                        <div class="slot s-purple"><span class="slot-time">19:00–20:30</span> Junior Elite</div>
+                    </div>
+                    <div class="day">
+                        <h3 class="day-name">Tor</h3>
+                        <div class="slot s-blue"><span class="slot-time">12:00–14:00</span> Rock Steady gr. 2</div>
+                        <div class="slot s-blue"><span class="slot-time">14:00–16:30</span> Rock Steady gr. 1</div>
+                        <div class="slot s-yellow"><span class="slot-time">16:45–18:00</span> Bokseskole</div>
+                        <div class="slot s-green"><span class="slot-time">18:15–19:45</span> Mosjonist erfarne</div>
+                        <div class="slot s-green"><span class="slot-time">19:45–21:15</span> Mosjonist nybeg.</div>
+                    </div>
+                    <div class="day">
+                        <h3 class="day-name">Fre</h3>
+                        <div class="slot s-red"><span class="slot-time">17:30–19:00</span> Konkurranse</div>
+                    </div>
+                    <div class="day">
+                        <h3 class="day-name">Lør</h3>
+                        <div class="slot slot-empty">Fri</div>
+                    </div>
+                    <div class="day">
+                        <h3 class="day-name">Søn</h3>
+                        <div class="slot s-blue"><span class="slot-time">18:00–ca&nbsp;20:30</span> Rock Steady samlet</div>
+                    </div>
+                </div>
+                <ul class="week-notes reveal">
+                    <li>Bokseskolen: under 18 år. Mosjonisten: fra 18 år.</li>
+                    <li>Rock Steady Boxing er kun for fightere med Parkinson.</li>
+                    <li>Konkurranse &amp; Junior Elite er for utvalgte med erfaring.</li>
+                </ul>
             </div>
         </section>
 
@@ -160,148 +187,69 @@
             <div class="container">
                 <div class="section-head reveal">
                     <p class="section-eyebrow">Priser</p>
-                    <h2>Medlemskap &amp; klippekort</h2>
-                    <p class="section-sub">Enkle, månedlige priser. Innmelding skjer via Norges Idrettsforbund (minidrett.no).</p>
+                    <h2>Medlemskap</h2>
+                    <p class="section-sub">Innmelding via minidrett.no (Norges Idrettsforbund).</p>
                 </div>
                 <div class="price-grid">
                     <div class="price-card reveal">
                         <h3>Bokseskolen</h3>
                         <p class="price-amount">200 kr<span>/mnd</span></p>
-                        <p class="price-for">Gutter og jenter under 18 år</p>
+                        <p class="price-for">Under 18 år</p>
                     </div>
                     <div class="price-card price-card-featured reveal">
                         <div class="price-badge">Mest valgt</div>
                         <h3>Mosjonisten</h3>
                         <p class="price-amount">369 kr<span>/mnd</span></p>
-                        <p class="price-for">Medlemmer fra 18 år og oppover</p>
+                        <p class="price-for">Fra 18 år og oppover</p>
                     </div>
                     <div class="price-card reveal">
-                        <h3>Klippekort – damer</h3>
-                        <p class="price-amount">700–900 kr<span>/11 klipp</span></p>
-                        <p class="price-for">
-                            «Damer Total» kr 900,- gir også tilgang til mosjonistpartiene.<br />
-                            «Damer» kr 700,- – ett klipp pr. trening.
-                        </p>
+                        <h3>Klippekort damer</h3>
+                        <p class="price-amount">700–900<span>kr / 11 klipp</span></p>
+                        <p class="price-for">«Damer Total» gir også mosjonist-tilgang</p>
                     </div>
                 </div>
-                <p class="price-note reveal">Konkurransepartiet, Junior Elite og Rock Steady Boxing avtales direkte med klubben.</p>
+                <p class="price-note reveal">Konkurranse, Junior Elite og Rock Steady avtales med klubben.</p>
             </div>
         </section>
 
-        <!-- ============ Timeplan ============ -->
-        <section id="timeplan" class="section section-alt">
-            <div class="container">
-                <div class="section-head reveal">
-                    <p class="section-eyebrow">Treningstider</p>
-                    <h2>Slik ser uka ut</h2>
-                    <p class="section-sub">Med forbehold om endringer – sjekk gjerne sosiale medier for oppdateringer.</p>
-                </div>
-
-                <div class="week reveal">
-                    <div class="day">
-                        <h3 class="day-name">Mandag</h3>
-                        <div class="slot s-red"><span class="slot-time">17:00–18:30</span> Konkurransepartiet</div>
-                        <div class="slot s-pink"><span class="slot-time">19:00–20:30</span> Fitness damer</div>
-                    </div>
-                    <div class="day">
-                        <h3 class="day-name">Tirsdag</h3>
-                        <div class="slot s-blue"><span class="slot-time">12:00–14:00</span> Rock Steady, gr. 2 (mindre intens)</div>
-                        <div class="slot s-blue"><span class="slot-time">14:00–16:30</span> Rock Steady, gr. 1 (mer intens)</div>
-                        <div class="slot s-yellow"><span class="slot-time">16:45–18:00</span> Bokseskole (under 18)</div>
-                        <div class="slot s-green"><span class="slot-time">18:15–19:45</span> Mosjonisten, erfarne</div>
-                        <div class="slot s-green"><span class="slot-time">19:45–21:15</span> Mosjonisten, nybegynnere</div>
-                    </div>
-                    <div class="day">
-                        <h3 class="day-name">Onsdag</h3>
-                        <div class="slot s-red"><span class="slot-time">17:00–19:00</span> Konkurransepartiet</div>
-                        <div class="slot s-purple"><span class="slot-time">19:00–20:30</span> Junior Elite</div>
-                    </div>
-                    <div class="day">
-                        <h3 class="day-name">Torsdag</h3>
-                        <div class="slot s-blue"><span class="slot-time">12:00–14:00</span> Rock Steady, gr. 2 (mindre intens)</div>
-                        <div class="slot s-blue"><span class="slot-time">14:00–16:30</span> Rock Steady, gr. 1 (mer intens)</div>
-                        <div class="slot s-yellow"><span class="slot-time">16:45–18:00</span> Bokseskole (under 18)</div>
-                        <div class="slot s-green"><span class="slot-time">18:15–19:45</span> Mosjonisten, erfarne</div>
-                        <div class="slot s-green"><span class="slot-time">19:45–21:15</span> Mosjonisten, nybegynnere</div>
-                    </div>
-                    <div class="day">
-                        <h3 class="day-name">Fredag</h3>
-                        <div class="slot s-red"><span class="slot-time">17:30–19:00</span> Konkurransepartiet</div>
-                    </div>
-                    <div class="day">
-                        <h3 class="day-name">Lørdag</h3>
-                        <div class="slot slot-empty">Ingen fast trening</div>
-                    </div>
-                    <div class="day">
-                        <h3 class="day-name">Søndag</h3>
-                        <div class="slot s-blue"><span class="slot-time">18:00–ca 20:30</span> Rock Steady, samleparti (gr. 1 &amp; 2)</div>
-                    </div>
-                </div>
-
-                <ul class="week-notes reveal">
-                    <li>Bokseskolen er for gutter og jenter under 18 år.</li>
-                    <li>Mosjonisten er for medlemmer fra og med 18 år og oppover.</li>
-                    <li>Rock Steady Boxing er kun for fightere med Parkinson.</li>
-                    <li>Konkurransepartiet og Junior Elite er kun for medlemmer som satser og har erfaring klubben har valgt ut.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- ============ Prøvetime (CTA-band) ============ -->
+        <!-- ============ Prøvetime ============ -->
         <section id="provetime" class="cta-band">
+            <div class="cta-burst" aria-hidden="true"></div>
             <div class="container cta-inner reveal">
                 <div>
                     <h2>Nysgjerrig på boksing?</h2>
-                    <p>Ta en uforpliktende prøvetime hos oss – eller stikk innom og slå av en prat. Vi hjelper deg å finne riktig parti.</p>
+                    <p>Ta en uforpliktende prøvetime – eller stikk innom og slå av en prat.</p>
                 </div>
                 <div class="cta-actions">
                     <a href="mailto:max@oslobokseklubb.no?subject=Prøvetime%20hos%20Oslo%20Bokseklubb" class="btn btn-primary btn-lg">Bestill prøvetime</a>
-                    <a href="tel:+4741318818" class="btn btn-ghost btn-lg">Ring 413 18 818</a>
+                    <a href="tel:+4741318818" class="btn btn-ghost btn-lg">Ring 413&nbsp;18&nbsp;818</a>
                 </div>
             </div>
         </section>
 
         <!-- ============ Mer hos oss ============ -->
-        <section id="mer" class="section">
+        <section id="mer" class="section section-alt">
             <div class="container">
                 <div class="section-head reveal">
                     <p class="section-eyebrow">Mer hos oss</p>
                     <h2>Ikke bare trening</h2>
-                    <p class="section-sub">Vi tilbyr litt av hvert – for både enkeltpersoner og grupper.</p>
                 </div>
                 <div class="mini-grid">
-                    <div class="mini reveal">
-                        <span class="mini-ico">🎯</span>
-                        <h3>Privattimer</h3>
-                        <p>Lær å bokse fortere enn du hadde trodd var mulig – med en trener helt for deg.</p>
-                    </div>
-                    <div class="mini reveal">
-                        <span class="mini-ico">🥳</span>
-                        <h3>Utdrikningslag</h3>
-                        <p>Det ultimate utdrikningslaget får du hos oss – garantert god stemning!</p>
-                    </div>
-                    <div class="mini reveal">
-                        <span class="mini-ico">🚀</span>
-                        <h3>Kick-off</h3>
-                        <p>Opplev et rått kick-off for bedriften eller laget i bokshallen.</p>
-                    </div>
-                    <div class="mini reveal">
-                        <span class="mini-ico">❤️</span>
-                        <h3>Støtt oss</h3>
-                        <p>Støtt klubben med din grasrotandel via Norsk Tipping – det koster deg ingenting.</p>
-                    </div>
+                    <div class="mini reveal"><span class="mini-ico">🎯</span><h3>Privattimer</h3><p>Lær å bokse raskere – med en trener helt for deg.</p></div>
+                    <div class="mini reveal"><span class="mini-ico">🥳</span><h3>Utdrikningslag</h3><p>Det ultimate utdrikningslaget – garantert god stemning.</p></div>
+                    <div class="mini reveal"><span class="mini-ico">🚀</span><h3>Kick-off</h3><p>Et rått kick-off for bedriften eller laget i bokshallen.</p></div>
+                    <div class="mini reveal"><span class="mini-ico">❤️</span><h3>Støtt oss</h3><p>Gi din grasrotandel via Norsk Tipping – helt gratis for deg.</p></div>
                 </div>
             </div>
         </section>
 
         <!-- ============ Kontakt ============ -->
-        <section id="kontakt" class="section section-alt">
+        <section id="kontakt" class="section">
             <div class="container grid-2">
                 <div class="reveal">
-                    <p class="section-eyebrow">Kontakt oss</p>
+                    <p class="section-eyebrow">Kontakt</p>
                     <h2>Ta kontakt</h2>
-                    <p class="lead">Stikk innom på Jordal, eller ta kontakt – vi svarer gjerne på spørsmål om trening, partier og medlemskap.</p>
-
+                    <p class="lead">Stikk innom på Jordal, eller ta kontakt om trening og medlemskap.</p>
                     <div class="people">
                         <div class="person">
                             <strong>Max Mankowitz</strong>
@@ -314,26 +262,18 @@
                             <a href="mailto:johnny@oslobokseklubb.no">johnny@oslobokseklubb.no</a>
                         </div>
                     </div>
-
                     <ul class="contact-list">
-                        <li>
-                            <span class="contact-ico">📍</span>
-                            <div><strong>Adresse</strong><br />Jordalgata 12, 0657 Oslo<br /><small>Jordal Idrettspark</small></div>
-                        </li>
+                        <li><span class="contact-ico">📍</span><div><strong>Jordalgata 12, 0657 Oslo</strong><br /><small>Jordal Idrettspark</small></div></li>
                     </ul>
-
                     <div class="socials">
                         <a href="https://www.instagram.com/oslobokseklubb/" target="_blank" rel="noopener" class="social-btn">Instagram</a>
                         <a href="https://www.facebook.com/OsloBokseklubb/" target="_blank" rel="noopener" class="social-btn">Facebook</a>
                     </div>
                 </div>
-
                 <div class="map-wrap reveal">
-                    <iframe
-                        title="Kart til Oslo Bokseklubb, Jordalgata 12"
+                    <iframe title="Kart til Oslo Bokseklubb, Jordalgata 12"
                         src="https://www.openstreetmap.org/export/embed.html?bbox=10.776%2C59.911%2C10.788%2C59.916&layer=mapnik&marker=59.9135%2C10.7820"
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <a class="map-link" href="https://www.openstreetmap.org/?mlat=59.9135&mlon=10.7820#map=16/59.9135/10.7820" target="_blank" rel="noopener">Åpne i kart ↗</a>
                 </div>
             </div>
@@ -348,10 +288,9 @@
                 <p>Boksing for alle på Jordal siden 1981.</p>
             </div>
             <nav class="footer-nav" aria-label="Bunnmeny">
-                <a href="#om">Om oss</a>
-                <a href="#partier">Partier &amp; priser</a>
+                <a href="#partier">Partier</a>
                 <a href="#timeplan">Treningstider</a>
-                <a href="#mer">Mer hos oss</a>
+                <a href="#priser">Priser</a>
                 <a href="#provetime">Prøvetime</a>
                 <a href="#kontakt">Kontakt</a>
             </nav>
