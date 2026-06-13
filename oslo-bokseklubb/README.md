@@ -23,26 +23,28 @@ python3 -m http.server 8000
 
 ## Innhold som er brukt
 
-Hentet fra offentlig tilgjengelig informasjon om klubben:
+Basert på skjermdumper av klubbens nåværende nettside:
 
-- **Adresse:** Jordalgata 12, 0657 Oslo (Jordal Idrettspark)
-- **E-post:** max@oslobokseklubb.no · **Tlf:** 41 31 88 18
-- **Partier:** Bokseskolen (under 18, 150 kr/mnd), Mosjonisten (over 18, 329 kr/mnd),
-  Fitnessboksing for kvinner
-- **Innmelding:** via minidrett.no
+- **Partier:** Bokseskole (10–18 år, 200 kr/mnd), Mosjonisten (over 18, 369 kr/mnd),
+  Fitnessboksing for damer, Konkurransepartiet, Junior Elite og Rock Steady Boxing
+  (for personer med Parkinson)
+- **Klippekort damer:** «Damer Total» 11 klipp kr 900,- · «Damer» 11 klipp kr 700,-
+- **Treningstider:** full ukeplan (man–søn) gjengitt i `#timeplan`
+- **Mer:** privattimer, utdrikningslag, kick-off, grasrotandel (Støtt oss)
+- **Kontakt:** Max Mankowitz (max@oslobokseklubb.no, mob 413 18 818) og
+  Johnny Carlsen (johnny@oslobokseklubb.no)
+- **Innmelding/prøvetime:** via minidrett.no / direkte kontakt
 
 ## Gjenstår å tilpasse (krever input fra klubben)
 
-Disse er satt med fornuftige standardverdier og bør verifiseres mot klubbens
-faktiske merkevare og informasjon:
+1. **Logo** – `assets/logo.svg` er en plassholder utformet etter klubbens røde
+   boksehanske-logo. Legg inn den ekte logofila (samme filnavn, eller oppdater
+   `<img src>` i `index.html` og `link rel="icon"`).
+2. **Bilder** – legg gjerne inn ekte treningsbilder i hero- og om-seksjonen.
+3. **Adresse** – `Jordalgata 12, 0657 Oslo` er hentet fra offentlige kilder; verifiser.
+4. **Treningstider** – dobbeltsjekk tidene mot klubbens egen plan (særlig fredag).
+5. **Konkurranse/Junior Elite/Rock Steady-priser** – står som «etter avtale»; fyll inn
+   dersom det finnes faste satser.
 
-1. **Logo** – `assets/logo.svg` er en plassholder. Legg inn ekte logo (samme filnavn,
-   eller oppdater `<img src>` i `index.html` og `link rel="icon"`).
-2. **Farger** – juster `--accent` og `--accent-2` øverst i `styles.css` til klubbens
-   profilfarger.
-3. **Bilder** – legg gjerne inn ekte treningsbilder i hero og om-seksjonen.
-4. **Fitnessboksing-pris** – står som «Ta kontakt»; fyll inn dersom prisen er fast.
-5. **Åpningstider / kontaktperson** – verifiser at tidene og e-post/telefon stemmer.
-
-> Merk: Den nåværende nettsiden blokkerer automatisk innhenting, så innholdet over
-> er rekonstruert fra offentlige kilder og bør dobbeltsjekkes mot klubbens egne data.
+> Merk: Den nåværende nettsiden blokkerer automatisk innhenting, så innholdet ble
+> rekonstruert fra skjermdumper og offentlige kilder. Dobbeltsjekk mot klubbens data.
