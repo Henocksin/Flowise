@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Oslo Bokseklubb (plassholder-logo)">
+  <rect width="64" height="64" rx="14" fill="#0c0c0e"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="12.5" fill="none" stroke="#e11d2a" stroke-width="2"/>
+  <!-- Boksehanske -->
+  <g transform="translate(14 13)">
+    <path fill="#e11d2a" d="M24.5 6.5c5 0 9 3.7 9 9.2 0 2.2-.7 4-1.9 5.7.6 1 .9 2.1.9 3.3 0 4.1-3.4 7.3-7.7 7.3H11.2c-1.4 0-2.6-1.1-2.6-2.6v-2.2C4.2 34.7 1.5 30.6 1.5 25.7c0-6.4 4.6-11.4 11-12.6V8.8c0-1.3 1-2.3 2.3-2.3h9.7z"/>
+    <path fill="#b3131f" d="M8.6 26.2v6.9c0 1.5 1.2 2.6 2.6 2.6h5.1V26.2H8.6z"/>
+    <rect x="12.5" y="6.5" width="12" height="4.2" rx="2.1" fill="#f2c94c"/>
+  </g>
+  <text x="32" y="59" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" font-weight="700" fill="#f4f4f6" letter-spacing="1">OBK</text>
+</svg>
