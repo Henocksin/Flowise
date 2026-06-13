@@ -37,9 +37,8 @@ Basert på skjermdumper av klubbens nåværende nettside:
 
 ## Gjenstår å tilpasse (krever input fra klubben)
 
-1. **Logo** – `assets/logo.svg` er en plassholder utformet etter klubbens røde
-   boksehanske-logo. Legg inn den ekte logofila (samme filnavn, eller oppdater
-   `<img src>` i `index.html` og `link rel="icon"`).
+1. **Logo** – ✅ klubbens ekte logo (`assets/logo.png`) er lagt inn i header og footer.
+   `assets/logo.svg` brukes nå kun som favicon (firkantet variant).
 2. **Bilder** – legg gjerne inn ekte treningsbilder i hero- og om-seksjonen.
 3. **Adresse** – `Jordalgata 12, 0657 Oslo` er hentet fra offentlige kilder; verifiser.
 4. **Treningstider** – dobbeltsjekk tidene mot klubbens egen plan (særlig fredag).
